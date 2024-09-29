@@ -1,0 +1,23 @@
+
+version: 2
+
+models:
+  - name: y4a_dwc_amz_cop_ovr
+    # tests:
+    #   - unique:
+    #       column_name: country || '-' || invoice_id
+
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - country
+            - invoice_id
+
+    columns:
+      - name: country
+        data_tests:
+          - not_null
+
+      - name: invoice_id
+        data_tests:
+          - not_null

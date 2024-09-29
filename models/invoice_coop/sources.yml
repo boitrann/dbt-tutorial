@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: coop
+    database: y4a_datawarehouse
+    schema: y4a_dd
+    tables:
+      - name: y4a_dwc_amz_avc_cop_ovr

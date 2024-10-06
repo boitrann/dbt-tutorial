@@ -13,4 +13,4 @@ SELECT
     backup_report_input as backup_report_input,
     invoice_line_type as invoice_line_type,
     funding_type as funding_type
-FROM {{ source('coop', 'y4a_dwc_amz_avc_cop_ovr') }}
+FROM {{ source('src_coop', 'y4a_dwc_amz_avc_cop_ovr') }}

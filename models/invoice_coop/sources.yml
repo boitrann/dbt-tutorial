@@ -1,8 +1,20 @@
 version: 2
 
 sources:
-  - name: coop
+  - name: src_coop
     database: y4a_datawarehouse
     schema: y4a_dd
     tables:
       - name: y4a_dwc_amz_avc_cop_ovr
+
+      - name: y4a_dwc_amz_avc_cop_dtl
+
+      - name: y4a_dwc_amz_avc_cop_vir
+
+      - name: y4a_dwc_amz_avc_cop_clp
+
+      - name: y4a_dwc_amz_avc_cop_acr
+
+      - name: y4a_dwc_amz_avc_cop_ppt
+
+      - name: y4a_dwc_amz_avc_cop_agm
